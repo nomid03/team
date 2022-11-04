@@ -31,7 +31,19 @@
         padding: 0 0 0 30px;
         width: 300px;
     }
+    img {
+  border-radius: 50%;
+}
       
+.MyBox{
+ background-color:#04aa6d;
+ color:#fff;
+ text-align:center;
+ padding:15px;
+}
+#Result{
+ text-align:center;
+}
      </style>
         </style>
         
@@ -59,14 +71,33 @@
         </div>
         
         
+        
     </main>
+
         <div> 
          
           <p><b>HTML:5  CSS</b></p> >
         </div>
     
        <footer>
-        <p><b>Lets to test any thing in HTNL& CSS</b> </p>
+        <p><b>Lets to test any thing in HTNL& CSS</b> </p> 
+        <div class="MyBox" onmouseover="mouseOver();" onmouseout="mouseOut();">
+            <p>where are you mous </p>
+            </div>
+            
+            <h2 id="Result"></h2>
+            
+            <script>
+            
+            function mouseOver(){
+             document.getElementById("Result").innerHTML = "Hello !";
+            }
+            
+            function mouseOut(){
+             document.getElementById("Result").innerHTML = "Welecome to my team";
+            }
+            
+            </script>
 
       </footer>
 </body>
